@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ELÉVATION | Quiet Luxury &amp; Timeless Elegance</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .text-label-caps {
+            text-transform: uppercase;
+        }
+
+        /* Only where explicitly noted as a style class, not content alteration */
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "secondary": "#5f5e5b",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "outline-variant": "#c4c7c7",
+                        "on-surface": "#1a1c1a",
+                        "on-tertiary-fixed-variant": "#55433b",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-dim": "#dbdad7",
+                        "tertiary-fixed": "#f8ddd2",
+                        "surface-bright": "#faf9f6",
+                        "on-surface-variant": "#444748",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5f5e5e",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed": "#1c1c19",
+                        "surface-container-high": "#e9e8e5",
+                        "surface-container-highest": "#e3e2e0",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e3e2e0",
+                        "surface-container": "#efeeeb",
+                        "on-secondary-fixed-variant": "#474743",
+                        "on-tertiary-container": "#957f76",
+                        "secondary-fixed": "#e5e2dd",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#1c1b1b",
+                        "inverse-on-surface": "#f2f1ee",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1a",
+                        "background": "#faf9f6",
+                        "secondary-container": "#e5e2dd",
+                        "surface": "#faf9f6",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-low": "#f4f3f1",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#dbc1b6",
+                        "tertiary-container": "#261812",
+                        "on-secondary-container": "#656461",
+                        "primary": "#000000",
+                        "on-primary-container": "#858383",
+                        "on-secondary": "#ffffff",
+                        "outline": "#747878",
+                        "on-tertiary-fixed": "#261812",
+                        "secondary-fixed-dim": "#c9c6c2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "button": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "button": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background">
+    <!-- Top Navigation Bar -->
+    <header class="bg-surface border-b border-primary/10 dark:border-on-surface/10 sticky top-0 z-50">
+        <nav
+            class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">New
+                    Arrivals</a>
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-300"
+                    href="#">Collections</a>
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-300"
+                    href="#">Lookbook</a>
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-300"
+                    href="#">About</a>
+            </div>
+            <a class="font-display-lg text-headline-md md:text-display-lg text-primary tracking-tighter"
+                href="/">ELÉVATION</a>
+            <div class="flex items-center gap-6">
+                <button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity duration-300"
+                    data-icon="person">person</button>
+                <button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity duration-300"
+                    data-icon="shopping_bag">shopping_bag</button>
+                <button class="md:hidden material-symbols-outlined text-primary" data-icon="menu">menu</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-full h-[921px] overflow-hidden">
+            <img class="w-full h-full object-cover grayscale-[20%]"
+                data-alt="A high-fashion editorial portrait of a sophisticated woman wearing a structured black cashmere coat and wide-leg trousers. She is standing in a minimalist concrete architectural space with dramatic natural light casting sharp shadows. The mood is one of quiet luxury and effortless confidence, with a clean and bright light-mode aesthetic emphasizing premium fabrics."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJzJZfBCMhmaArc6gb8jgKidsOy48VEKqRf8aH53V5WQhOv_-zHeQMgwMs9T-lCPTufPkNUh75mNXCiYAmYXKzFGqiEgIbUVo6iDxRKCWZ3q-0FSwCSkiJXFpmL3u98n2U4QIDMKZU5Vegoq-tYFX5Jcqsq0Y9HshHTv2MMmuEAcsS-_rMjyi2hAj75h5TKuHhSqWsnBuAOT8fQ9mzVEj1y7ESQ8yUsdQmkBFL2Xv2paxnHYSm5mwEIvgYel4tta3ikoHJclTeyDw" />
+            <div class="absolute inset-0 bg-black/5 flex flex-col justify-center items-center text-center px-4">
+                <h1
+                    class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary drop-shadow-sm mb-6">
+                    New Collection</h1>
+                <p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl mb-10">Intentional pieces designed for a
+                    lifetime of refined living.</p>
+                <a class="inline-block bg-primary text-on-primary px-12 py-5 font-button text-button uppercase tracking-widest hover:bg-secondary transition-colors duration-300"
+                    href="#">Explore Arrivals</a>
+            </div>
+        </section>
+        <!-- Trending Now - Asymmetric Grid -->
+        <section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="flex justify-between items-end mb-16">
+                <h2 class="font-headline-md text-headline-md">Trending Now</h2>
+                <a class="font-label-caps text-label-caps text-secondary underline underline-offset-4 decoration-secondary/30 hover:text-primary transition-colors"
+                    href="#">View All</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <!-- Large Featured Item -->
+                <div class="md:col-span-7 group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/5] bg-surface-container-low mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="A sophisticated woman modeling a sleek, minimalist ivory silk slip dress paired with an oversized charcoal wool blazer. The setting is a bright, sun-drenched minimalist loft with expansive windows. The lighting is soft and airy, creating a high-end editorial feel that perfectly aligns with the ELÉVATION brand aesthetic."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgowCSTU1RtYhJ589Db9AfskofE49K0L5GSW38b16HaSW6LfdzP1WRnemge_fiJ_tsp6DZjr_L5byRVZUe5Wj61L3tVigUk1DObpcqLjJ785FuaT2ba3R9q6tj2a0OovezPCF8OuacJe8FvK97IHdZQawIGPlrq32niKCStHMWgH7Jqtvza3EZ2nX5xsbRP1X9vUItf1w4SvpQN4MIECxciK-8lbor84l4xQMbedyrzQGe9cvG-BPcSEXw2u8VGqVl84-9MszZXIk" />
+                    </div>
+                    <p class="font-label-caps text-label-caps text-secondary mb-2">Editor's Pick</p>
+                    <h3 class="font-headline-sm text-headline-sm mb-1">Tailored Wool Sculptor Coat</h3>
+                    <p class="font-body-md text-body-md text-secondary">$1,250</p>
+                </div>
+                <!-- Two Smaller Items -->
+                <div class="md:col-span-5 flex flex-col gap-16">
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden aspect-square bg-surface-container-low mb-6">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="Close-up detail of a hand-stitched leather handbag in a deep espresso brown, resting on a clean marble surface. The lighting is high-contrast and dramatic, highlighting the fine texture of the leather and the gold-plated hardware. The composition is clean and minimalist, emphasizing the quality of materials."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKbFu11Ziv3u2NDz6TcCeExJpolRomqH8snq_ZtS4HR8L7qml5WVWmjNNIIq1-73IoDjNF0DQClTz6OOdc0c90rWOfrjnBbwOa3FQS1vW59P0HTf7b13mhZiMkf3otUwWALuWa31tid_MhU1qE2V3rXZUIC212JeyA_aWGhIher-11I6wmgQiwxPvkLhBg6I-WpInTxIdgYf5MoRAs_yCDqT9UcbzsR0vkZam9ZR0qjB24J9HgY5cNqkn9hRtd5AeKxjQmqnfi4U" />
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-1">The Signature Tote</h3>
+                        <p class="font-body-md text-body-md text-secondary">$890</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden aspect-square bg-surface-container-low mb-6">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="A detailed shot of a refined gold cuff bracelet on a model's wrist, styled with a fine-knit cashmere sweater. The background is a soft-focus minimalist interior with neutral tones. The mood is intimate and luxurious, focusing on the delicate craftsmanship of the jewelry and the soft texture of the knitwear."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd1MW1X_F7jC9MWLgJMhFO2QqkOoyJUv7QNIm0on3MXUnPR3cEAJgKbD8YnFxyVGcFL4LlCmQ3_tU3Xkkg8nCYcO6ufE8QxiXjZuhM6b0lRH0e9PMYjYyOt8Vdo87-GK1tfY9JWhRUrszHVflV7B56gIy5f8L9RJQQwNKIMnG2faNlwAa1pEBleMLUSHHGGnXUQZNEmwHqejm7hkGxmVYmA8cwwfEHRvrfcQw6Kmvt3kVqpnQUpe_7Uuy23Qbop79D-dQHczISxi0" />
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-1">Hammered Gold Cuff</h3>
+                        <p class="font-body-md text-body-md text-secondary">$420</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shop by Category - Horizontal Scroll/Bento Mix -->
+        <section class="py-section-gap bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-md text-headline-md mb-4">Curated Categories</h2>
+                    <p class="font-body-md text-body-md text-secondary max-w-lg mx-auto">Foundational pieces that
+                        transition seamlessly through the seasons.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-unit">
+                    <!-- Category: Coats -->
+                    <a class="relative h-[600px] group overflow-hidden" href="#">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            data-alt="An elegant long wool coat in a soft beige color, hanging in a minimalist walk-in closet with clean lines and warm ambient lighting. The aesthetic is serene and orderly, showcasing the coat's impeccable tailoring and premium texture. The overall mood is sophisticated and exclusive."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjLsc7qDhtq8f7PEXDsNr_lmipPWWyVePjHZuP3zHXJiU50zrAnPOI-g36H2GsIVZAIH-pML8FJPFgvR2kyBDHL-NP8cOeCUGZtw8uSK52kgoHY19gBMrhk650k2rq1ydp8BlMy1U1cPZ4QHl3TDqipoAnD7epr6olpibXqpWDUzYQtxkbTRQm3z_pdWPNi7EtxHNzT9gUtNT-5GwCumNfP3kd3nisxfTOMMs7lJY5m6hEuz4UODPzan-y_jg18fi1kpOwBi-8cXA" />
+                        <div
+                            class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300">
+                        </div>
+                        <div class="absolute bottom-10 left-10 text-on-primary">
+                            <span class="font-label-caps text-label-caps border-b border-on-primary pb-1">Coats</span>
+                        </div>
+                    </a>
+                    <!-- Category: Dresses -->
+                    <a class="relative h-[600px] group overflow-hidden" href="#">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            data-alt="A floor-length silk evening gown in a deep midnight blue, draped over a minimalist sculpture in a bright, modern gallery. The lighting is soft and ethereal, emphasizing the fluid movement and high-end sheen of the fabric. The image communicates a sense of high-end editorial elegance."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTtOa-6k3Lm9veiHtDSihIjDCzsXiPIPR56qu-HgHLF7mnI4bWlQ2AOj-opfRVjgi5UB8MCwRcmnDFBAkhFN4516KTuc4UcO7a3vVj3ASQ7eCaSdPeDhG5SmjpmfU7hZIl_aYfrVR2qy1teHCGby4mtw6fmGvyX6e9ps4EgNta4DHfJ8Z1T491ULmAaTvAoaVh1dSXpA1YF3BdxRtnIwlWRvm_FExv8HCK8ihshxIPxb21StjywVxHeFo_1WYydqL91U4tzynz0Bo" />
+                        <div
+                            class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300">
+                        </div>
+                        <div class="absolute bottom-10 left-10 text-on-primary">
+                            <span class="font-label-caps text-label-caps border-b border-on-primary pb-1">Dresses</span>
+                        </div>
+                    </a>
+                    <!-- Category: Accessories -->
+                    <a class="relative h-[600px] group overflow-hidden" href="#">
+                        <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            data-alt="An artistic arrangement of premium accessories including a leather belt, silk scarf, and minimalist sunglasses on a travertine pedestal. The background is a warm, neutral-toned wall with soft shadows. The composition is balanced and sculptural, reflecting the brand's commitment to intentional design."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnkaBoh8UFXAk2DyM_LiAU45XfDo93fGudl0x-h_u7fytjo4r9YJT0f22K6dlp4g472efKhrh_8lqi6LwIDzphgkpo7LOx66b9BRtLGuO9VIg3tNsPlIgG8FgTvvlxC5TbYRu9jxnPtMAry5u_kmPupGNHlMIC1IkraHTGp_inQaJ6ihPeM2v3I2cy9pDHIG9GOZfu5GWPwMloRM0DEJ_m8TTBVau4nY9btBPMPiv5_i4PE3Mek0i2ZYOdaPvSJ2hqt3U0Z5MKzGU" />
+                        <div
+                            class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300">
+                        </div>
+                        <div class="absolute bottom-10 left-10 text-on-primary">
+                            <span
+                                class="font-label-caps text-label-caps border-b border-on-primary pb-1">Accessories</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Instagram-style Gallery -->
+        <section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="flex flex-col items-center mb-16 text-center">
+                <span class="font-label-caps text-label-caps text-secondary mb-4">Follow the Journey</span>
+                <h2 class="font-headline-md text-headline-md mb-2">@ELEVATION_OFFICIAL</h2>
+                <p class="font-body-md text-body-md text-secondary">Join our community of intentional living.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square bg-surface-container overflow-hidden group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                        data-alt="A minimalist lifestyle shot of a woman sipping coffee in a bright Parisian cafe, wearing an oversized knit sweater. The mood is relaxed yet chic, with soft morning light and a palette of creams and blacks. The aesthetic is clean and modern, capturing a moment of quiet luxury."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JWcYCs2wsADIKwDVPTkPEewn8jB78nvs2nUn0EhfFvqvCkRJ0aJ7CL8vnOuUVerZDZ3O0VBFMA_4ftilZ33CRN_n3m9CT2OK88Nwj5euM_hcMCN0msD5lyoCdiVxilj-7j2YUMm95g9ZF8oFm84ZggfmDhFMJdAmjkU3NLfG8F_IoCobM2NVD9XCiJzi6Fx3vg4UkPZ7VIxBdIYGqkDQk5mUz_gS1fKYcncu9CSFnd9KnIUb1sN2NkbDSq_HoxNxsIAcPUQG9IQ" />
+                </div>
+                <div class="aspect-square bg-surface-container overflow-hidden group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                        data-alt="Detailed close-up of high-quality fabric textures including fine wool, smooth silk, and soft cashmere layered together. The lighting is diffused and natural, highlighting the rich tactile quality of the materials in a minimalist, monochrome palette."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuByDLH3o9KcpO5zx47N-0q8pFGrkNdTmzNAeh3h6Bxov2uwer22uxOmR6rbuaca-l1I1_RkXhbrx-fHIZyjTtrEWTQpDDAhCgYjfTVQFdnwNtunA9avIaR390TZi25du_7SjaG_mHU0qXxjN90m_cxvbcv7XqcII6fozANAabvBE_3uSnukas7gL5wm6T7ibXNE1VBoEZz8P3RMBx2kYfmSNR2wtx42Yl-k0h9WTYZU04VthXt4G202EeuLbO-2Kdg4yQETU1FZar0" />
+                </div>
+                <div class="aspect-square bg-surface-container overflow-hidden group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                        data-alt="An editorial shot of minimalist white architecture with sharp geometric shadows under a bright sun. The scene is clean and expansive, representing the brand's aesthetic inspiration. The high-key lighting creates a sense of openness and purity."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuArfyljsNx2LmRJCX1FCokqkhRbeV-5JKrPGpQRyP4hypA6EJVQ9EnwVaWLY3FYsETVNrYvM2kF4286ze6W5EViNmS901xffEY40FwCL5z4nHAJ6K9c-NihGuH-6KSklOG8hpt1zNtFp2iFnYBWjOkr6TvvzDfMcsV652z04mj0M59Wux0z8DhTAiw_s7TYAoYCry7x2uWe6BMkSbFWu9sYmGoHIDy9adEZmAj4i2XZ9imDrbEODxr-ckuTTgsFPOGcIYBeBm7Pl5o" />
+                </div>
+                <div class="aspect-square bg-surface-container overflow-hidden group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                        data-alt="A portrait of a person in a sharp, black tailored suit standing against a white marble wall. The pose is sculptural and poised, reflecting the brand's commitment to timeless sophistication and editorial modernism. The lighting is crisp and modern."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgckytO4MCAd_k0fYJ50LRYzPHf_f7M8JnADLnFwc5kfgWVEqwQTdK3QWcYj6e2B8JLbMZ-QUNR2CWdbr362OD-n4PIuHVRBNdsa-5L2JzueeoLz6hgdios8KJznNP9H7rerzdFveu_MvB77M8bc0_RTOycsXSyMtDdlxdQH9cFheKroia8AfmxUe5bfbR33EGas7J6qUVFyC1GNWDiGEToR2U8tdequlUEe-ehO-UEMYWYr1wKT1hKpdhurLB-6aQdTIIn49rVRM" />
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Section -->
+        <section class="py-section-gap border-t border-primary/10">
+            <div class="max-w-[800px] mx-auto px-margin-mobile text-center">
+                <h2 class="font-display-lg text-headline-md md:text-headline-md mb-6">The Journal</h2>
+                <p class="font-body-lg text-body-lg text-secondary mb-10">Sign up to receive early access to new
+                    collections and exclusive editorial content from the ELÉVATION world.</p>
+                <form class="flex flex-col md:flex-row gap-8 items-end">
+                    <div class="flex-1 w-full text-left">
+                        <label class="font-label-caps text-label-caps text-secondary mb-4 block" for="email">Email
+                            Address</label>
+                        <input
+                            class="w-full bg-transparent border-t-0 border-x-0 border-b border-primary p-0 pb-2 focus:ring-0 focus:border-secondary transition-colors font-body-md text-body-md"
+                            id="email" placeholder="example@domain.com" type="email" />
+                    </div>
+                    <button
+                        class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 font-button text-button uppercase tracking-widest hover:opacity-80 transition-opacity"
+                        type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-low border-t border-primary/10 dark:border-on-surface/10">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 gap-y-8">
+            <div class="font-display-lg text-headline-md text-primary">ELÉVATION</div>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+                    href="#">Privacy Policy</a>
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+                    href="#">Terms of Service</a>
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+                    href="#">Shipping &amp; Returns</a>
+                <a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors duration-200"
+                    href="#">Contact</a>
+            </div>
+            <div class="font-body-md text-body-md text-secondary">
+                © 2024 ELÉVATION. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple scroll interaction for header transparency
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+
+        // Atmospheric parallax effect on hero
+        window.addEventListener('scroll', () => {
+            const heroImg = document.querySelector('section img');
+            const scroll = window.pageYOffset;
+            if (heroImg) {
+                heroImg.style.transform = `translateY(${scroll * 0.1}px)`;
+            }
+        });
+    </script>
+</body>
+
+</html>
